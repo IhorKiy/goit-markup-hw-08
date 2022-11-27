@@ -27,12 +27,13 @@
           <span class="logo__1">Web</span><span class="logo__2">Studio</span></a
         >
 
-        <button class="menu-toggle js-open-menu" type="button"
-        aria-expanded="false"
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="mobile__menu" width="40px" height="40px">
-            <use href="./images/icons.svg#menu_40px"></use>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu_mob"></use>
           </svg>
         </button>
         <nav>
@@ -85,7 +86,7 @@
 
       <!--OUR ADVANTAGES------------------------------------------------------------------------>
 
-      <section class="advantages">
+      <section class="advantages section">
         <div class="advantages__container container">
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -188,7 +189,7 @@
 
       <!--TEAM---------------------------------------------------------------------------->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
@@ -466,11 +467,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- REGULAR CLIENTS ---------------------------------------------------->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -559,10 +560,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -------------------------------------------------------------------------------->
-    <footer class="ftr">
+    <!-- <footer class="ftr">
       <div class="container ftr__ftr">
         <div class="ftr__adress">
           <a href="./index.html" lang="en" class="logo logo__4">
@@ -680,7 +681,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- MODAL Window -------------------------------------->
     <div class="backdrop is-hidden" data-modal>
@@ -766,20 +767,32 @@
     </div>
 
     <!-- MOBIL MENU --------------------------------------->
-    <div class="menu__container js-menu-container" id="mobile-menu">
-      <button class="menu__toggle js-close-menu">
-        <svg class="" width="40" height="40">
-          <use href="./images/icons.svg#close_40px"></use>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobmenu__img" width="40" height="40">
+          <use href="./images/icons.svg#close_mobmenu"></use>
         </svg>
       </button>
 
       <ul class="mobile__menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li><a href="" class="link current">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobmenu__contact">
+        <li class="mobmenu__contact--tel">+38 096 111 11 11</li>
+        <li class="mobmenu__contact--mail">info@devstudio.com</li>
+      </ul>
+      <ul class="mobmenu__social">
+        <li class="mobmenu__social--item"><a  href=""></a>Instagram</li>
+        <li class="mobmenu__social--item"><a  href=""></a>Twitter</li>
+        <li class="mobmenu__social--item"><a  href=""></a>Facebook</li>
+        <li class="mobmenu__social--item"><a  href=""></a>LinkedIn</li>
       </ul>
     </div>
+
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -787,6 +800,5 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>

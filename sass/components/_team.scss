@@ -5,8 +5,14 @@
 .team__title {
     margin-bottom: 50px;
 
+    font-size: 28px;
     font-weight: 700;
+@media  screen and (min-width: 1200px){ 
     font-size: 36px;
+
+}
+
+
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;

@@ -1,7 +1,11 @@
 .nav__list {
   list-style: none;
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    margin-left: 93px;
+  }
 }
 
 .nav__link {
@@ -27,12 +31,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav__list {
-    display: none;
-  }
-}
-
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -41,7 +39,7 @@
   color: var(--accent-color);
 }
 
-.nav__link .current::after {
+.nav__link.current::after {
   content: "";
   position: absolute;
   bottom: -1px;

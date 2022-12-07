@@ -1,5 +1,5 @@
 .advantages {
-    background-color: var(--accent-color2);
+  background-color: var(--accent-color2);
 }
 
 .advantages__list {
@@ -18,8 +18,11 @@
 
 .advantages__item {
   flex-basis: 270px;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

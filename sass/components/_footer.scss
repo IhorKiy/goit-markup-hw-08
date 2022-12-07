@@ -11,6 +11,10 @@
 }
 
 .ftr__containet-tablet {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and(min-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -39,12 +43,6 @@
 
 .ftr__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-link {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .ftr__link {
@@ -140,8 +138,8 @@
   background-color: #2196f3;
 }
 
-.ftr-social-a:hover .social-icon,
-.ftr-social-a:focus .social-icon {
+.ftr-social-a:hover .ftr-social__icon,
+.ftr-social-a:focus .ftr-social__icon {
   fill: #ffffff;
 }
 

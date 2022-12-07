@@ -1,6 +1,7 @@
 .advantages {
   background-color: var(--accent-color2);
-}
+  padding-top: 94px;
+  }
 
 .advantages__list {
   list-style: none;
@@ -35,7 +36,7 @@
   height: 120px;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;

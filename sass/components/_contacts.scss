@@ -42,12 +42,14 @@
 
 .contact__item {
   display: flex;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 10px;
-  }
   @media screen and (min-width: 1200px) {
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:first-child) {
+    margin-top: 10px;
   }
 }
 

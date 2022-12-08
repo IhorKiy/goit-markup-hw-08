@@ -102,7 +102,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 100%;
   min-height: 60px;
   margin-left: 0 auto;
   margin-right: 0 auto;
@@ -599,7 +598,17 @@ img {
 
 .advantages {
   background-color: var(--accent-color2);
-  padding-top: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
 }
 
 .advantages__list {
